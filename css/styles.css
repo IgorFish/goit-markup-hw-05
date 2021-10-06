@@ -566,7 +566,7 @@ ul {
   overflow: hidden;
 }
 
-.projekt-overley {
+.project-overley {
   position: absolute;
   top: 0;
   left: 0;
@@ -578,8 +578,7 @@ ul {
   transition: transform 250ms ease;
 }
 
-.project-link:hover .project-overley,
-.project-link:focus .project-overley {
+.project-link:hover .project-overley {
   transform: translateY(0);
 }
 
