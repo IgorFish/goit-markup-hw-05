@@ -34,6 +34,9 @@ img {
 .link {
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+}
 ul {
   list-style: none;
   padding: 0px;
@@ -148,6 +151,7 @@ ul {
 /* шапка ссылки */
 
 .header-link {
+  position: relative;
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -164,6 +168,16 @@ ul {
 }
 .header-link.current {
   color: var(--accent-color);
+}
+.header-link.current:after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 /* адрес телефон шапка */
 
@@ -547,8 +561,34 @@ ul {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.project-img {
+  position: relative;
+  overflow: hidden;
+}
 
-.porjekt-section {
+.projekt-overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2196f3;
+  padding: 64px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+
+.project-link:hover .project-overley,
+.project-link:focus .project-overley {
+  transform: translateY(0);
+}
+
+.overley-text {
+  color: var(--primari-bg-color);
+  text-align: left;
+}
+
+. .porjekt-section {
   padding: 20px 24px;
   border-top: 0px;
   border: 1px solid #eeeeee;
