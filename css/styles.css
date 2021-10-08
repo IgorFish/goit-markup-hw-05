@@ -646,9 +646,42 @@ ul {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: var(--primari-bg-color);
+  border-radius: 4px;
+}
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+}
+
+/* репета */
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
 }
 .modal {
@@ -663,7 +696,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 15px;
-}
+} */
 
 /* основной цвет background: #212121; */
 /* вторичный #757575; */
