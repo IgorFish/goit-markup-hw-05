@@ -25,7 +25,7 @@
           ><span class="logo-header">Studio</span></a
         >
         <nav class="header-navigation">
-          <ul class="header-list list">
+          <ul class="header-list">
             <li class="header-item">
               <a class="header-link current" href="./index.html">Студия</a>
             </li>
@@ -65,7 +65,7 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button class="hero-title-button" type="button">
+          <button class="hero-title-button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -452,14 +452,15 @@
       </div>
     </footer>
     <!-- модальное окно -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-button">
+        <button type="button" class="close-button" data-modal-close>
           <svg class="icon-close" width="30" height="30">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
